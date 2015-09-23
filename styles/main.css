@@ -71,5 +71,10 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 		width: 50%;
 		max-height: 10000px !important;
 	}
+	.landing .landing-description{
+		font-size: 21px;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
 }
 
