@@ -1,0 +1,1 @@
+"use strict";$(function(){$("#show-map").click(function(a){a.preventDefault(),$("#mapbox").slideDown("fast",function(){$("html, body").animate({scrollTop:$("#mapbox").offset().top+"px"})})})});

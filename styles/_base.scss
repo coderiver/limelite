@@ -1,0 +1,81 @@
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  @include add-transition;
+}
+
+.logo {
+  height: 23px;
+  width: 184px;
+  margin: 80px auto 0 auto;
+}
+
+.menu-bg {
+  height: 900px;
+  width: 894px;
+  background: url(../images/menu_bg.png) top left no-repeat;
+  position: fixed;
+  z-index: 100;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.menu {
+  position: fixed;
+  right: 93px;
+  top: 85px;
+  z-index: 1000;
+
+  .menu-toggle {
+    background: url(../images/menu.png) 0 0 no-repeat;
+    width: 21px;
+    height: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+
+    &.menu-x {
+      background-position: 0 -17px;
+    }
+  }
+
+  .menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 76px 0 0 0;
+    font-size: 12px;
+    text-align: right;
+
+    li {
+      margin: 15px 0;
+
+      a {
+        &:hover {
+          text-decoration: none;
+          color: darken(#fff, 50%);
+        }
+      }
+    }
+  }
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+
+  iframe,
+  object,
+  embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

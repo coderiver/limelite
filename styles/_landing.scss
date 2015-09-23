@@ -1,0 +1,63 @@
+.htmlindex-page,
+.index-page {
+  height: 100%;
+}
+
+.htmlindex-page footer {
+  display: none;
+}
+
+.index-page {
+  .logo {
+    display: none;
+  }
+}
+
+.landing {
+  height: 100%;
+  opacity: 0;
+
+  .landing-showreel {
+    max-width: 65%;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    top: 100%;
+
+    .embed-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .landing-description {
+    max-width: 990px;
+    margin: 10% auto;
+
+    h1 {
+      margin: 0 0 2px 0;
+    }
+
+    p + p {
+      margin-top: 45px;
+    }
+  }
+
+  footer {
+    display: block;
+  }
+}
+
+#limelitesvg {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -11.5px;
+//  z-index: 1000;
+}

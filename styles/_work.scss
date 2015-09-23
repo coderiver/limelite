@@ -1,0 +1,33 @@
+.work {
+  margin-top: 106px;
+
+}
+
+.work-item {
+  opacity: 0;
+  margin-bottom: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .container {
+    width: 1000px;
+    .col-sm-6 {
+      padding: 0;
+    }
+  }
+
+  .featured-work-description {
+    margin-top: 50px;
+
+    .featured-work-name {
+      color: #fff;
+    }
+
+    .featured-work-details {
+      margin-left: 65px;
+      color: #9a9a9a;
+    }
+  }
+}

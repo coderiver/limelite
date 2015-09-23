@@ -1,0 +1,41 @@
+.contact {
+  margin-top: 88px;
+
+  h3 {
+    letter-spacing: 0.1em;
+    margin-bottom: 17px;
+  }
+
+  a {
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .contact-details {
+    line-height: 46px;
+    margin-bottom: 55px;
+
+    &.last {
+      margin-bottom: 5px;
+    }
+  }
+
+  .left-panel {
+    padding-right: 42px;
+  }
+
+  .right-panel {
+    padding-left: 37px;
+  }
+
+  .social {
+    margin-top: 67px;
+  }
+}
+
+#mapbox {
+  display: none;
+}

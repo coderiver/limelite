@@ -1,0 +1,63 @@
+.team {
+  margin-top: 106px;
+
+  .container {
+    width: 1000px;
+    padding: 0;
+    margin-top: 100px;
+    @include clearfix;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    *[class*="col-xs-"] {
+      overflow: hidden;
+      padding: 0;
+      height: 240px;
+      cursor: pointer;
+      background-size: cover;
+      background-position: center center;
+
+      img {
+        width: 100%;
+      }
+
+      .team-item {
+        background: #fff;
+        height: 100%;
+        color: #000;
+        font-size: 18px;
+        padding: 40px 20px 0 40px;
+        opacity: 0;
+        @include add-transition(0.5s);
+
+        a {
+          color: #000;
+        }
+
+        p {
+          margin: 0;
+          line-height: 22px;
+        }
+      }
+
+      &.team-block-first {
+        background: #191919;
+        padding: 74px 0 0 82px;
+        cursor: default;
+
+        p {
+          letter-spacing: 0.029em;
+          margin-bottom: 6px;
+        }
+      }
+
+      &:hover {
+        >.team-item {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
